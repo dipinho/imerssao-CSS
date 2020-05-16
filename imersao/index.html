@@ -7,15 +7,20 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<!--Font-->
 		<link href="https://fonts.googleapis.com/css2?family=Bellota+Text&family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
+		<!--Font Awesome-->
+		<script src="https://kit.fontawesome.com/23ff63120e.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header>
 			<nav class="menu">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Currículo</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contato</a></li>
+					<li><a href="#">
+						<i class="fas fa-home"></i>
+						</a>
+					</li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#portfolio">Portfólio</a></li>
+					<li><a href="#contato">Contato</a></li>
 				</ul>
 			</nav>
 				<div>
@@ -24,50 +29,70 @@
 				</div>
 
 		</header>
-		<section class="portfolio">
+
+		<section class="sobre" id="sobre">
+			<h2>Sobre</h2>
+
+			<figure class="avatar">
+				<img  class="img-sobre" src="./img/sobre.png" alt="George tocando guitarra" >
+			</figure>
+			<p>Me chamo George de Pinho, estou no 7º período de Ciências da Computação na faculdade Pitágoras SLZ, em São Luís - Maranhão. Atualmente sou professor de cursos livres, onde leciono sobre introdução a computação, introdução ao Pacote Office, introdução a programação desktop e mobile utilizando as linguagens Java e Kotlin e introdução a criação e desenvolvimento de sites, com HTML5 e CSS3.</p>
+			
+			<p>Fiz a inscrição na Imersão CSS da Alura pois preciso praticar e consequentemente aprender um pouco mais sobre CSS, nesta pandemia me dispus a evoluir o máximo possível na programação web principalmente na utilização do JavaScript e das linguagens de marcação e estilo HTML e CSS, reespectivamente. </p>
+			
+			<p>Tenho bastante interesse pelo Backend, sou um apaixonado por Java mesmo sem conhecer muito...(Talvez este seja o motivo kkk), e penso, em um dia me tornar um desenvolvedor FullStack, aquele que faz merda no Front-End e no Back-End.</p>
+			
+			<div class="grid">
+				
+			</div>
+		</section>
+
+		<section class="portfolio" id="portfolio">
 			<h2>Portfólio</h2>
 	
-			<div class="grid"> 
-				<div class="backend"> 
-					<figure>
-						<img class="img-portfolio" src="./img/backend.jpg" alt="backend">
-						<figcaption>Back-End</figcaption>
-					</figure>
-				</div> 
-
-				<div class="mobile"> 
-					<figure>
-						<img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-						<figcaption>Mobile</figcaption>
-					</figure>
-				</div> 
+			<div class="grid">
 				
-				<div class="web"> 
-					<figure>
-						<img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-						<figcaption>Web design</figcaption>
-					</figure>
-				</div> 
-				
-				<div class="projetos">
-					<figure>
-						<img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
-						<figcaption>Projetos pessoais</figcaption>
-					</figure> </div> 
-				
-				<div class="guitarra">
-					<figure>
-						<img class="img-portfolio" src="./img/eu.png" alt="Guitarra">
-						<figcaption>Guitarra</figcaption>
-					</figure> 
-				</div> 
-				
-				<div class="gastronomia"> 
-					<figure>
-						<img class="img-portfolio" src="./img/gastronomia.jpg" alt="Gastronomia">
-						<figcaption>Gastronomia</figcaption>
-					</figure>
-				</div> 
+				<figure>
+					<img class="img-portfolio" src="./img/backend.jpg" alt="backend">
+					<figcaption>Back-End</figcaption>
+				</figure>
+				<figure>
+					<img class="img-portfolio" src="./img/mobile.jpg" alt=">Mobile">
+					<figcaption>Mobile</figcaption>
+				</figure>
+				<figure>
+					<img class="img-portfolio" src="./img/web.jpg" alt="Web design">
+					<figcaption>Web design</figcaption>
+				</figure>
+				<figure>
+					<img class="img-portfolio" src="./img/projetos.jpg" alt="Projetos pessoais">
+					<figcaption>Projetos pessoais</figcaption>
+				</figure> 
+				<figure>
+					<img class="img-portfolio" src="./img/guitarra.png" alt="Guitarra">
+					<figcaption>Guitarra</figcaption>
+				</figure> 
+				<figure>
+					<img class="img-portfolio" src="./img/gastronomia.jpg" alt="Gastronomia">
+					<figcaption>Gastronomia</figcaption>
+				</figure> 
+			</div>
+		</section>
+		<section class="contato" id="contato">
+			<h2>Contato</h2>
+			<div class="grid icons">
+				<a target="_blank" href="https://github.com/dipinho">
+					<i class="fab fa-github"></i>
+				</a>
+				<a target="_blank" href="https://linkedin.com">
+					<i class="fab fa-linkedin"></i>				
+				</a>
+				<a target="_blank" href="https://twitter.com/dipinho1">
+					<i class="fab fa-twitter-square"></i>
+				</a>
+				<a target="_blank" href="#">
+					<i class="fas fa-envelope-square"></i>
+				</a>
 			</div>
 		</section>
 	</body>
